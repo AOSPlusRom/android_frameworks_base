@@ -2843,7 +2843,6 @@ public final class Settings {
             QUICK_SETTINGS_QUICK_PULL_DOWN,
             SAFE_HEADSET_VOLUME,
             PIE_STATE,
-            NAVBAR_RECENTS_CLEAR_ALL,
             TELO_RADIO_ENABLED,
             TELO_RADIO_2G_WIFI,
             TELO_RADIO_LTE,
