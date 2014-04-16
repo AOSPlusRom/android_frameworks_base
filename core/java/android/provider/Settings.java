@@ -2707,6 +2707,12 @@ public final class Settings {
          */
         public static final String QUIET_HOURS_RINGER = "quiet_hours_ringer";
 
+         /**
+         * Whether or not to show circle battery around the lockscreen ring
+         * @hide
+         */
+        public static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+
         /**
          * Weather to minimize lockscreen challenge on screen turned on
          * @hide
