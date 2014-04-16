@@ -2628,6 +2628,12 @@ public final class Settings {
          * @hide
          */
         public static final String IMMERSIVE_LAST_ACTIVE_STATE = "immersive_last_active_state";
+        
+        /**
+         * Height of navigation bar buttons
+         * @hide
+         */
+        public static final String NAV_BUTTONS_HEIGHT = "nav_buttons_height";
 
         /**
          * Quick settings tiles to show on status bar
@@ -2836,9 +2842,6 @@ public final class Settings {
         public static final String[] SETTINGS_TO_RESET = {
             QUICK_SETTINGS_QUICK_PULL_DOWN,
             SAFE_HEADSET_VOLUME,
-<<<<<<< HEAD
-            PIE_STATE
-=======
             PIE_STATE,
             NAVBAR_RECENTS_CLEAR_ALL,
             TELO_RADIO_ENABLED,
@@ -2846,7 +2849,6 @@ public final class Settings {
             TELO_RADIO_LTE,
             TELO_RADIO_2G_SCREENOFF,
             TELO_RADIO_GO3G_UNLOCK
->>>>>>> 2b5c2d3... [1/3] TeloRadio frameworks_base
         };
 
         // Settings moved to Settings.Secure
