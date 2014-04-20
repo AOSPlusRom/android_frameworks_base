@@ -65,7 +65,7 @@ public class DessertCaseView extends FrameLayout {
             R.drawable.dessert_honeycomb,   // 2011
             R.drawable.dessert_ics,         // 2011
             R.drawable.dessert_jellybean,   // 2012
-            R.drawable.dessert_paranoidbean,// AOSPA3+
+            R.drawable.dessert_aosplusbean,// 
     };
 
     private static final int[] XRARE_PASTRIES = {
@@ -79,7 +79,7 @@ public class DessertCaseView extends FrameLayout {
                                             //         -- mcleron
 
             R.drawable.dessert_keylimepie,  // from an alternative timeline
-            R.drawable.dessert_paranoid,    // Paranoid Face
+            R.drawable.dessert_aosplus,    // aosplus Face
     };
     private static final int[] XXRARE_PASTRIES = {
             R.drawable.dessert_zombiegingerbread, // thx hackbod

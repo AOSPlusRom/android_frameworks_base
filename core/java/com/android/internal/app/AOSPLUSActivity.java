@@ -42,11 +42,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PAWorldActivity extends Activity {
+public class AOSPLUSActivity extends Activity {
     FrameLayout mContent;
     int mCount;
     final Handler mHandler = new Handler();
-    final static int SOLID_BGCOLOR = 0xFF000000;
+    final static int SOLID_BGCOLOR = 0xFF33B5E7;
     final static int CLEAR_BGCOLOR = 0xC0000000;
     final static int TEXT_COLOR = 0xFFFFFFFF;
 
@@ -69,7 +69,7 @@ public class PAWorldActivity extends Activity {
         lp.gravity = Gravity.CENTER;
 
         final ImageView logo = new ImageView(this);
-        logo.setImageResource(com.android.internal.R.drawable.pa_world_logo);
+        logo.setImageResource(com.android.internal.R.drawable.aosplus_logo);
         logo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         logo.setVisibility(View.INVISIBLE);
 
@@ -83,20 +83,20 @@ public class PAWorldActivity extends Activity {
         letter.setTextSize(200);
         letter.setTextColor(TEXT_COLOR);
         letter.setGravity(Gravity.CENTER);
-        letter.setText("PA");
+        letter.setText("A+");
 
         final int p = (int)(4 * metrics.density);
 
         final TextView tv = new TextView(this);
         if (light != null) tv.setTypeface(light);
-        tv.setTextSize(20);
+        tv.setTextSize(30);
         tv.setPadding(p, p, p, p);
         tv.setTextColor(TEXT_COLOR);
         tv.setGravity(Gravity.CENTER);
         tv.setTransformationMethod(new AllCapsTransformationMethod(this));
         String paVersion = SystemProperties.get("ro.pa.version");
         paVersion = paVersion.replaceAll("([0-9\\.]+?)-.*", "$1");
-        tv.setText("Paranoid Android " + paVersion);
+        tv.setText("" + paVersion);
         tv.setVisibility(View.INVISIBLE);
 
         mContent.addView(bg);
@@ -165,7 +165,7 @@ public class PAWorldActivity extends Activity {
                     getBaseContext().startActivityAsUser(intent,
                             new UserHandle(UserHandle.USER_CURRENT));
                 } catch (ActivityNotFoundException ex) {
-                    android.util.Log.e("PAWorldActivity", "Couldn't catch a break.");
+                    android.util.Log.e("AOSPLUSActivity", "Couldn't catch a break.");
                 }
                 finish();
                 return true;
